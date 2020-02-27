@@ -282,17 +282,7 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) {
-    .card:nth-child(n) {
-        grid-column-start: span 6;
-    }
-}
 
-@media screen and (max-width: 800px) {
-    .card:nth-child(n) {
-        grid-column-start: span 12;
-    }
-}
 
 .social-buttons {
     position: relative;
@@ -338,4 +328,53 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(2.2);
+}
+
+@media screen and (max-width: 1200px) {
+    .card:nth-child(n) {
+        grid-column-start: span 6;
+    }
+
+    .social-buttons {
+        position: relative;
+        bottom: -150px;
+        left: 100px;
+        display: flex;
+    }
+
+    .clock {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        border: 1px solid #ccc;
+        padding: 0px 5px 0px 5px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .card:nth-child(n) {
+        grid-column-start: span 12;
+    }
+
+    .clock {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        border: 1px solid #ccc;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .social-buttons {
+        position: relative;
+        bottom: -50px;
+        left: -25px;
+        display: flex;
+    }
 }
