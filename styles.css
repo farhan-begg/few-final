@@ -75,7 +75,7 @@ nav {
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 30px;
+        top: 63px;
         background-image: linear-gradient(rgb(19, 2, 2), rgb(2, 48, 57));
         display: flex;
         flex-direction: column;
@@ -272,8 +272,8 @@ body {
 
 .clock {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 50%;
+    left: 35%;
     transform: translateX(-50%) translateY(-50%);
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -330,6 +330,41 @@ body {
     transform: scale(2.2);
 }
 
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+
+}
+
+body.dark-mode a {
+    color: white;
+    cursor: pointer;
+}
+
+body.dark-mode button {
+    background-color: #eee;
+    color: #111;
+    cursor: pointer;
+}
+
+body.light-mode {
+    background-color: #eee;
+    color: white;
+}
+
+body.light-mode a {
+    color: white;
+    cursor: pointer;
+
+}
+
+body.light-mode button {
+    background-color: white;
+    color: #eee;
+    cursor: pointer;
+}
+
+
 @media screen and (max-width: 1200px) {
     .card:nth-child(n) {
         grid-column-start: span 6;
@@ -344,13 +379,9 @@ body {
 
     .clock {
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        border: 1px solid #ccc;
-        padding: 0px 5px 0px 5px;
+        font-size: 20px;
     }
 
 }
@@ -364,11 +395,6 @@ body {
         position: absolute;
         top: 40%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        color: rgb(255, 255, 255);
-        font-size: 30px;
-        border: 1px solid #ccc;
-        padding: 0px 5px 0px 5px;
     }
 
     .social-buttons {
