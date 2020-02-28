@@ -24,6 +24,14 @@ nav {
     font-size: 40px;
 }
 
+.logo:hover {
+    cursor: pointer;
+
+    color: grey;
+    text-shadow: white;
+}
+
+
 .nav-links {
     display: flex;
     justify-content: space-around;
