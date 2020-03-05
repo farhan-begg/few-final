@@ -280,7 +280,7 @@ body {
 
 .clock {
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 35%;
     transform: translateX(-50%) translateY(-50%);
     color: rgb(255, 255, 255);
